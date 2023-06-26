@@ -2,4 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: petejohanson/zmk/.github/workflows/build-user-config.yml@display/bongo-cat-widget
+    uses: petejohanson/zmk/.github/workflows/build.yml@display/bongo-cat-widget
