@@ -26,7 +26,7 @@
                         tapping-term-ms = <200>;
                         bindings = <&hm LEFT_ALT A>, <&kp A>;
                 };
-                tds: tda{
+                tds: tds{
                         compatible = "zmk,behavior-tap-dance";
                         label = "TDS";
                         #binding-cells = <0>;
