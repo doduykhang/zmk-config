@@ -24,7 +24,7 @@
                         label = "TAP_DANCE_MOD_TAP";
                         #binding-cells = <2>;
                         tapping-term-ms = <200>;
-                        bindings = <&hm>, <&kp>;
+                        bindings = <&mt>, <&kp>;
                 };
         };
 
