@@ -19,14 +19,14 @@
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
-                tda: tap_dance_mod_tap {
+                tda: tda{
                         compatible = "zmk,behavior-tap-dance";
                         label = "TDA";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&hm LEFT_ALT A>, <&kp A>;
                 };
-                tds: tap_dance_mod_tap {
+                tds: tda{
                         compatible = "zmk,behavior-tap-dance";
                         label = "TDS";
                         #binding-cells = <0>;
