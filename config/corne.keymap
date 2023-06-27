@@ -14,7 +14,7 @@
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOMEROW_MODS";
                         #binding-cells = <2>;
-                        tapping-term-ms = <200>;
+                        tapping-term-ms = <100>;
                         quick-tap-ms = <0>;
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
@@ -46,6 +46,13 @@
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
                         bindings = <&hm LEFT_GUI F>, <&kp F>;
+                };
+                tdj: tdj {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "TDJ";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&hm RIGHT_GUI J>, <&kp F>;
                 };
         };
 
