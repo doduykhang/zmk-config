@@ -19,41 +19,6 @@
                         flavor = "balanced";
                         bindings = <&kp>, <&kp>;
                 };
-                tda: tda {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TDA";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&hm LEFT_ALT A>, <&kp A>;
-                };
-                tds: tds {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TDS";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&hm LEFT_SHIFT S>, <&kp S>;
-                };
-                tdd: tdd {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TDD";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&hm LEFT_CONTROL D>, <&kp D>;
-                };
-                tdf: tdf {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TDF";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&hm LEFT_GUI F>, <&kp F>;
-                };
-                tdj: tdj {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TDJ";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&hm RIGHT_GUI J>, <&kp j>;
-                };
         };
 
         keymap {
@@ -66,9 +31,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp ESCAPE &kp Q          &kp W            &kp E       &kp R          &kp T   &kp Y &kp U            &kp I                  &kp O               &kp P              &kp BSPC
-   &kp CLCK   &tda           &tds             &tdd        &tdf           &kp G   &kp H &tdj             &hm LEFT_CONTROL K     &hm RIGHT_SHIFT L   &hm RIGHT_ALT SEMI &kp SQT
-   &kp LSHFT  &kp Z          &kp X            &kp C       &kp V          &kp B   &kp N &kp M            &kp COMMA              &kp DOT             &kp FSLH           &kp ESC
+   &kp ESCAPE &kp Q          &kp W            &kp E                      &kp R                &kp T   &kp Y &kp U            &kp I                  &kp O               &kp P              &kp BSPC
+   &kp CLCK   &hm LEFT_ALT A &hm LEFT_SHIFT S &hm LEFT_CONTROL D         &hm LEFT_GUI F       &kp G   &kp H &hm RIGHT_GUI J  &hm LEFT_CONTROL K     &hm RIGHT_SHIFT L   &hm RIGHT_ALT SEMI &kp SQT
+   &kp LSHFT  &kp Z          &kp X            &kp C                      &kp V                &kp B   &kp N &kp M            &kp COMMA              &kp DOT             &kp FSLH           &kp ESC
                   &kp LGUI &lt 1 TAB &kp SPACE   &kp BACKSPACE &lt 2 ENTER &kp RALT
                         >;
                 };
