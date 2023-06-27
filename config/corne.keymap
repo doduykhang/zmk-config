@@ -52,7 +52,28 @@
                         label = "TDJ";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&hm RIGHT_GUI J>, <&kp F>;
+                        bindings = <&hm RIGHT_GUI J>, <&kp J>;
+                };
+                tdk: tdk {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "TDK";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&hm RIGHT_CONTROL K>, <&kp K>;
+                };
+                tdl: tdl {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "TDL";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&hm RIGHT_SHIFT L>, <&kp L>;
+                };
+                tdc: tdc {
+                        compatible = "zmk,behavior-tap-dance";
+                        label = "TDC";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&hm RIGHT_ALT SEMI>, <&kp SEMI>;
                 };
         };
 
@@ -67,7 +88,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp ESCAPE &kp Q          &kp W            &kp E       &kp R          &kp T   &kp Y &kp U            &kp I                  &kp O               &kp P              &kp BSPC
-   &kp CLCK   &tda           &tds             &tdd        &tdf           &kp G   &kp H &tdj             &hm LEFT_CONTROL K     &hm RIGHT_SHIFT L   &hm RIGHT_ALT SEMI &kp SQT
+   &kp CLCK   &tda           &tds             &tdd        &tdf           &kp G   &kp H &tdj             &tdk                   &tdl                &tdc               &kp SQT
    &kp LSHFT  &kp Z          &kp X            &kp C       &kp V          &kp B   &kp N &kp M            &kp COMMA              &kp DOT             &kp FSLH           &kp ESC
                   &kp LGUI &lt 1 TAB &kp SPACE   &kp BACKSPACE &lt 2 ENTER &kp RALT
                         >;
