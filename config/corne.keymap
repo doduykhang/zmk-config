@@ -19,12 +19,12 @@
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
-                td_mt: tap_dance_mod_tap {
+                tda: tap_dance_mod_tap {
                         compatible = "zmk,behavior-tap-dance";
-                        label = "TAP_DANCE_MOD_TAP";
+                        label = "TDA";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&kp>, <&kp>, <&kp>;
+                        bindings = <&hm LEFT_ALT A>, <&kp A>;
                 };
         };
 
@@ -39,7 +39,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp ESCAPE &kp Q          &kp W            &kp E       &kp R          &kp T   &kp Y &kp U            &kp I                  &kp O               &kp P              &kp BSPC
-   &kp CLCK   &td_mt LEFT_ALT A A &hm LEFT_SHIFT S &hm RCTRL D &hm LEFT_GUI F &kp G   &kp H &hm RIGHT_GUI J  &hm LEFT_CONTROL K     &hm RIGHT_SHIFT L   &hm RIGHT_ALT SEMI &kp SQT
+   &kp CLCK   &td  &hm LEFT_SHIFT S &hm RCTRL D &hm LEFT_GUI F &kp G   &kp H &hm RIGHT_GUI J  &hm LEFT_CONTROL K     &hm RIGHT_SHIFT L   &hm RIGHT_ALT SEMI &kp SQT
    &kp LSHFT  &kp Z          &kp X            &kp C       &kp V          &kp B   &kp N &kp M            &kp COMMA              &kp DOT             &kp FSLH           &kp ESC
                   &kp LGUI &lt 1 TAB &kp SPACE   &kp BACKSPACE &lt 2 ENTER &kp RALT
                         >;
